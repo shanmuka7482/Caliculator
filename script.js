@@ -177,7 +177,8 @@ document.addEventListener("keydown", function (e) {
     key == "*" ||
     key == "/" ||
     key == "=" ||
-    key == "Enter"
+    key == "Enter" ||
+    key == "c"
   ) {
     if (key === "=" || key === "Enter") {
       console.log("it is eql");
@@ -206,6 +207,12 @@ document.addEventListener("keydown", function (e) {
         screen.textContent = "Cant do it";
         anss = 0;
       }
+    }else if (key === "c") {
+      screen.textContent = "0";
+      count = 0;
+      expression = "";
+      anss = 0;
+      console.log(expression);
     }
   }
 });
